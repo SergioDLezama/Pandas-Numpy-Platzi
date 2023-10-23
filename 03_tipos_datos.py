@@ -50,6 +50,5 @@ jl.run()
 arr = np.array(['0', '1','2','3','4'])
 print(arr) # ['0', '1', '2', '3', '4']
 
-
 arr = arr.astype(np.int8) 
-print(arr) # [b'0' b'1' b'2' b'3' b'4']   
+print(arr) # [0 1 2 3 4]  
