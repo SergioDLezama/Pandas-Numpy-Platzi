@@ -50,6 +50,11 @@ jl.run()
 
 # Eliminar dimensiones
 
-print(vector, vector.ndim)
-vector_2 = np.squeeze(vector)
-print(vector_2, vector_2.ndim)
+print(vector, vector.ndim) # [[[[[[[[[[1 2 3]]]]]]]]]] 10
+
+vector_2 = np.squeeze(vector) # squeeze va a llevar las dimensiones a el punto que crea correcto
+
+print(vector_2, vector_2.ndim) # [1 2 3] 1
+
+
+

@@ -281,6 +281,8 @@ jl.run()
 # Axis 0
 a_b_0 = np.concatenate((a,b),axis=0)
 print(a_b_0)
+#[[1 2 5]
+# [3 4 6]]
 
 jl.run()
 
@@ -306,3 +308,5 @@ jl.run()
 
 a_b_1 = np.concatenate((a,b.T),axis=1)#
 print(a_b_1) 
+#[[1 2 5]
+#[3 4 6]]
