@@ -110,6 +110,13 @@ Para limpiar dupicados usamos .drop_duplicates()
 # Duplicamos una linea
 df = df_books._append(df_books.iloc[0])
 print(df.head(2),df.tail(2))
+
+'''
+Otra Alternativa para duplicar
+df = pd.concat([df_books,df_books.iloc[0].to_frame().T])
+print(df)
+'''
+
 '''
                             Name        Author  User Rating  Reviews  Price  Year        Genre
 0  10-Day Green Smoothie Cleanse      JJ Smith          4.7    17350      8  2016  Non Fiction
@@ -147,7 +154,14 @@ Por default sera de menor a mayor, para hacerlo al reves usamos
 print(df_books.sort_values('Year').head(3))
 print('-'*15)
 print(df_books.sort_values('Year',ascending=False).head(3))
-
-
-
-
+'''
+                                                  Name           Author  User Rating  Reviews  Price  Year        Genre
+177                                      I, Alex Cross  James Patterson          4.6     1320      7  2009      Fiction
+131  Glenn Beck's Common Sense: The Case Against an...       Glenn Beck          4.6     1365     11  2009  Non Fiction
+417                                   The Last Lecture     Randy Pausch          4.7     4028      9  2009  Non Fiction
+---------------
+                                                  Name                 Author  User Rating  Reviews  Price  Year        Genre       
+549  You Are a Badass: How to Stop Doubting Your Gr...            Jen Sincero          4.7    14331      8  2019  Non Fiction       
+294  School Zone - Big Preschool Workbook - Ages 4 ...            School Zone          4.8    23047      6  2019  Non Fiction       
+489                   The Wonderful Things You Will Be  Emily Winfield Martin          4.9     8842     10  2019      Fiction 
+'''
