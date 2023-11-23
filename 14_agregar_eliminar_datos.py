@@ -267,7 +267,7 @@ De forma rapida y sencilla .append()
 
 jl.run()
 
-df_books = df_books._append(df_books)
+df_books = df_books.append(df_books)
 print(df_books)
 '''
                                                   Name                    Author  User Rating  ...  Year  Nueva_Columna  Rango      
