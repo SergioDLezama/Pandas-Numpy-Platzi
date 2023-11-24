@@ -89,6 +89,18 @@ Hay que poner el ~ antes de la condicion
 '''
 print(df_books[~mayor_2016])
 '''
+                                                  Name               Author  User Rating  Reviews  Price  Year        Genre
+0                        10-Day Green Smoothie Cleanse             JJ Smith          4.7    17350      8  2016  Non Fiction
+1                                    11/22/63: A Novel         Stephen King          4.6     2052     22  2011      Fiction
+5        A Dance with Dragons (A Song of Ice and Fire)  George R. R. Martin          4.4    12643     11  2011      Fiction
+6    A Game of Thrones / A Clash of Kings / A Storm...  George R. R. Martin          4.7    19735     30  2014      Fiction
+9                            A Man Called Ove: A Novel      Fredrik Backman          4.6    23848      8  2016      Fiction
+..                                                 ...                  ...          ...      ...    ...   ...          ...
+540                                             Wonder        R. J. Palacio          4.8    21625      9  2013      Fiction
+541                                             Wonder        R. J. Palacio          4.8    21625      9  2014      Fiction
+542                                             Wonder        R. J. Palacio          4.8    21625      9  2015      Fiction
+543                                             Wonder        R. J. Palacio          4.8    21625      9  2016      Fiction
+546  You Are a Badass: How to Stop Doubting Your Gr...          Jen Sincero          4.7    14331      8  2016  Non Fiction
 
+[400 rows x 7 columns]
 '''
-

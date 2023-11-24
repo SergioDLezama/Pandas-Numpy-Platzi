@@ -128,3 +128,5 @@ print(linea)
 
 punto_punto_2 = matriz @ matriz_copy.T
 print(punto_punto_2)
+#[[ 30  80]
+# [ 80 255]]

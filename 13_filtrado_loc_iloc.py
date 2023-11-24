@@ -227,3 +227,8 @@ jl.run()
 
 df = df_books.iloc[:2,2:]
 print(df)
+'''
+   User Rating  Reviews  Price  Year        Genre
+0          4.7    17350      8  2016  Non Fiction
+1          4.6     2052     22  2011      Fiction
+'''

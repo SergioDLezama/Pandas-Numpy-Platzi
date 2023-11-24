@@ -74,9 +74,10 @@ jl.run()
 '''
 Igualmente podriamos borrar los elementos nulos con .dropna()
 '''
-
 df_dropna = df.dropna()
 print(df_dropna)
-
-
-
+'''
+   Col1  Col2 Col3
+0   1.0   5.0    a
+2   3.0   7.0    c
+'''

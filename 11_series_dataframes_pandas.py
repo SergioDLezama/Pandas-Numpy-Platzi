@@ -95,5 +95,5 @@ print(columnas_players) # Index(['Jugador', 'Altura', 'Goles'], dtype='object')
 
 # Podemos acceded a los indices
 index_players = df_players.index
-print(index_players)
+print(index_players) # Index([1, 7, 10, 30], dtype='int64')
 
