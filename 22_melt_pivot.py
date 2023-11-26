@@ -74,8 +74,12 @@ print(df[['Name','Genre']].head(5))
 
 jl.run()
 
-'''Aplicamos Melt'''
-df_melt = df[['Name','Genre']].melt().iloc[0:5]
+'''
+Aplicamos Melt
+Ahora cada resultado de las dos columnas pasa a una fila de
+este modo a tipo llave:valor.
+'''
+df_melt = df[['Name','Genre']].head(5).melt()
 print(df_melt)
 '''
   variable                                              value
@@ -90,3 +94,14 @@ print(df_melt)
 8    Genre                                            Fiction
 9    Genre                                        Non Fiction
 '''
+
+jl.run()
+
+'''
+Otra variacion
+Simplemente, podemos seleccionar las columnas que no quiero hacer 
+melt usando el parámetro id_vars. Para este caso Year y también la
+única columna que quiero aplicar el melt, para este caso Genre con 
+la propiedad value_vars.
+'''
+df_melt = df.melt(id_vars='Year',value_vars='Genre')
