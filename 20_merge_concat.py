@@ -207,7 +207,7 @@ print(left_right)
 jl.run()
 
 '''Para hacer merge con los datos de la derecha'''
-left_right = left.merge(right,left_on='key',right_on='key_2',how='inner')
+left_right = left.merge(right,left_on='key',right_on='key_2',how='right')
 print(left_right)
 '''
    key    A    B key_2   C   D

@@ -97,7 +97,7 @@ Agrupamiento por determinada funcion de agregacion
 df_2 = df.drop(['Reviews','Genre','Year','Price'],axis=1)
 
 df_authors = df_2.groupby('Author').agg(['min','max'])
-print(df_authors.sample())
+print(df_authors)
 '''
                                                                          Name                                                    Reviews       
                                                                           min                                                max     min    max     
